@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script type="module" crossorigin src="/h5/assets/index.c4526ec1.js"></script>
+    <link rel="modulepreload" href="/h5/assets/vendor.b3053c36.js">
+    <link rel="stylesheet" href="/h5/assets/vendor.a314556c.css">
+    <link rel="stylesheet" href="/h5/assets/index.01d1a777.css">
+    <script type="module">!function(){try{new Function("m","return import(m)")}catch(o){console.warn("vite: loading legacy build because dynamic import is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}}();</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script>
+        (function(d, c) {
+            var e = d.documentElement,
+                b = "orientationchange" in window ? "orientationchange" : "resize",
+                a = function() {
+                    var f = e.clientWidth;
+
+                    if (!f) {
+                        return
+                    }
+
+                    e.style.fontSize = 10 * (f / 320) + "px"
+                    if(f>640){
+                        e.style.fontSize=15+"px"
+                    }
+                };
+            if (!d.addEventListener) {
+                return
+            }
+            c.addEventListener(b, a, false);
+            d.addEventListener("DOMContentLoaded", a, false);
+            a()
+        })(document, window);
+    </script>
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",
+    t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule id="vite-legacy-polyfill" src="/h5/assets/polyfills-legacy.538b518f.js"></script>
+    <script nomodule id="vite-legacy-entry" data-src="/h5/assets/index-legacy.38773bdd.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+</html>
